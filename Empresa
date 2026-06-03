@@ -1,0 +1,272 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EletroMax</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:#f4f4f4;
+}
+
+/* MENU */
+
+header{
+    background-color:#003366;
+    color:white;
+    padding:20px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.menu{
+    display:flex;
+    gap:20px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+}
+
+.menu a:hover{
+    color:gold;
+}
+
+/* BANNER */
+
+.banner{
+    background-color:#0055aa;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.banner h1{
+    margin-bottom:15px;
+    font-size:40px;
+}
+
+.banner p{
+    font-size:18px;
+}
+
+/* PRODUTOS */
+
+.produtos{
+    padding:40px 20px;
+}
+
+.produtos h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    width:250px;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.card h3{
+    margin:15px 0;
+}
+
+.card p{
+    margin-bottom:10px;
+}
+
+.preco{
+    color:green;
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* SOBRE */
+
+.sobre{
+    background:white;
+    padding:40px;
+    text-align:center;
+}
+
+.sobre h2{
+    margin-bottom:20px;
+}
+
+/* CONTATO */
+
+.contato{
+    padding:40px;
+    text-align:center;
+}
+
+.contato h2{
+    margin-bottom:20px;
+}
+
+/* RODAPÉ */
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .menu{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .banner h1{
+        font-size:30px;
+    }
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+    <nav>
+
+        <div class="logo">EletroMax</div>
+
+        <div class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </div>
+
+    </nav>
+
+</header>
+
+<section class="banner" id="inicio">
+
+    <h1>Os Melhores Eletrodomésticos Para Sua Casa</h1>
+
+    <p>
+        Qualidade, economia e tecnologia para o seu dia a dia.
+    </p>
+
+</section>
+
+<section class="produtos" id="produtos">
+
+    <h2>Nossos Produtos</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1586208958839-06c17cacdf08?w=500" alt="Geladeira">
+            <h3>Geladeira Frost Free</h3>
+            <p>Economia e grande espaço interno.</p>
+            <p class="preco">R$ 2.899</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=500" alt="Microondas">
+            <h3>Micro-ondas</h3>
+            <p>Praticidade para sua cozinha.</p>
+            <p class="preco">R$ 599</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=500" alt="Máquina">
+            <h3>Máquina de Lavar</h3>
+            <p>Mais eficiência na lavagem.</p>
+            <p class="preco">R$ 1.799</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=500" alt="Fogão">
+            <h3>Fogão 5 Bocas</h3>
+            <p>Design moderno e resistente.</p>
+            <p class="preco">R$ 1.299</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="sobre" id="sobre">
+
+    <h2>Sobre a EletroMax</h2>
+
+    <p>
+        A EletroMax é uma empresa especializada na venda de eletrodomésticos
+        para residências. Trabalhamos com produtos de qualidade,
+        preços acessíveis e atendimento diferenciado para nossos clientes.
+    </p>
+
+</section>
+
+<section class="contato" id="contato">
+
+    <h2>Contato</h2>
+
+    <p>📍 Campos Eliseos, 100 - Brotas/SP</p>
+    <p>📞 (14) 98219-8316</p>
+    <p>📧 henry10@eletromax.com.br</p>
+
+</section>
+
+<footer>
+
+    <p>© 2026 EletroMax - Todos os direitos reservados</p>
+
+</footer>
+
+</body>
+</html>
+```
